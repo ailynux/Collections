@@ -1,0 +1,13 @@
+---
+import {getCollection} from "astro:content"
+
+import Layout from '../layouts/Layout.astro';
+import Product from '../components/landing/Product.astro'
+import Collection from '../components/landing/Collection.astro'
+---
+
+<Layout title="Welcome to Ailyn Diaz's Software Development Hub">
+	<Product />
+	<slot />
+	<Collection />
+</Layout>

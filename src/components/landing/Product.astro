@@ -1,0 +1,101 @@
+<main class="g-gradient-to-r from-purple-200 to-blue-500 h-100 flex flex-col main-container">
+  <!-- Profile Section -->
+  <section class="flex-1 flex justify-center items-center px-2 md:px-2">
+      <div class="max-w-5xl"> <!-- Adjusted max-w from max-w-4xl to max-w-3xl -->
+        <div class="pt-1 welcome-animation">
+          <h2 class="text-5xl lg:text-6xl font-bold mb-8 text-white">
+            <span class="animated-letter">W</span>
+            <span class="animated-letter">e</span>
+            <span class="animated-letter">l</span>
+            <span class="animated-letter">c</span>
+            <span class="animated-letter">o</span>
+            <span class="animated-letter">m</span>
+            <span class="animated-letter">e</span>
+            <span class="animated-letter">!</span>
+          </h2>
+          <p class="text-xl lg:text-2xl text-gray-400">Explore my website and discover more about me and the services I offer.</p>
+        </div>
+        
+      
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          <!-- About Me Card -->
+          <div class="bg-gray-900 rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+              <div class="flex justify-center items-center">
+                  <img src="../images/burrr_batcheditor.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full border-4 border-indigo-600 shadow-md transform hover:rotate-6 transition duration-300">
+                </div>
+                
+            <div class="p-6">
+              <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">About Me</h3>
+              <p class="text-gray-300 leading-relaxed">
+                In the pursuit of collecting cards and curating cool finds, I find solace. Beyond the tangible, I immerse myself in the digital realm, crafting code and bringing ideas to life. For in the convergence of the physical and the virtual, true magic happens.
+              </p>
+              
+            </div>
+          </div>
+          
+          <!-- Services Card -->
+          <div class="bg-gradient-to-br from-purple-800 to-indigo-800 rounded-lg overflow-hidden shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+              <div class="p-6">
+                <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Services</h3>
+                <ul class="text-gray-300 leading-relaxed">
+                  <li class="mb-2">
+                    <span class="inline-block w-4 h-4 mr-2 rounded-full bg-pink-500"></span>
+                    Website Development - "Digital Architect"
+                  </li>
+                  <li class="mb-2">
+                    <span class="inline-block w-4 h-4 mr-2 rounded-full bg-green-500"></span>
+                    UI/UX Design - "Experience Designer"
+                  </li>
+                  <li class="mb-2">
+                    <span class="inline-block w-4 h-4 mr-2 rounded-full bg-blue-500"></span>
+                    Mobile App Development - "App Innovator"
+                  </li>
+                  <li class="mb-2">
+                    <span class="inline-block w-4 h-4 mr-2 rounded-full bg-yellow-500"></span>
+                    Software Developer - "Code Maverick"
+                  </li>
+                  <li class="mb-2">
+                      <span class="inline-block w-4 h-4 mr-2 rounded-full bg-pink-500"></span>
+                      Card Collector - "Card Connoisseur"
+                    </li>
+                    <li class="mb-2">
+                      <span class="inline-block w-4 h-4 mr-2 rounded-full bg-green-500"></span>
+                      Memorabilia Collector - "Collectibles Curator"
+                    </li>
+                    <li class="mb-2">
+                      <span class="inline-block w-4 h-4 mr-2 rounded-full bg-blue-500"></span>
+                      Comic Book Aficionado - "Graphic Novel Guru"
+                    </li>
+                </ul>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+</main>
+
+
+<style>
+  main {
+    min-height: calc(20vh - 20px); /* Adjust 80px according to your footer's height */
+    background: linear-gradient(to right, #8a3ab9, #3a0ca3);
+    display: flex;
+    flex-direction: column;
+  }
+  .welcome-animation h2 {
+    animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+</style>

@@ -1,0 +1,76 @@
+<header class="relative bg-gradient-to-r from-purple-700 to-indigo-600 py-8 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+        <img src="../images/bands.webp" alt="Background Image" class="object-cover w-full h-96 sm:h-112 md:h-128 lg:h-144 xl:h-160 opacity-50" />
+    </div>
+
+    <!-- Content Container -->
+    <div class="relative z-10 flex justify-between items-center max-w-7xl mx-auto">
+        <!-- Logo -->
+        <a href="/" class="flex items-center">
+            <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider">Ailyn's Net</h1>
+        </a>
+        
+        <!-- Hamburger Icon -->
+        <button id="menu-toggle" class="md:hidden block text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12 5v2H3v1h9v2l3-3-3-3zm5 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm-3 3H3v-1h11v-2l3 3-3 3z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        
+        <!-- Navigation -->
+        <nav id="nav-menu" class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-white hover:text-yellow-300 uppercase font-semibold tracking-wide">Home</a>
+            <a href="/collection" class="text-white hover:text-yellow-300 uppercase font-semibold tracking-wide">Collection</a>
+            <a href="/services" class="text-white hover:text-yellow-300 uppercase font-semibold tracking-wide">Services</a>
+        </nav>
+        
+        <!-- Navigation Dropdown (Initially Hidden) -->
+        <div id="nav-dropdown" class="hidden md:hidden absolute top-20 right-0 bg-gray-800 rounded-md shadow-md py-2 px-4 space-y-2">
+            <a href="#" class="text-white hover:text-yellow-300 uppercase font-semibold tracking-wide block">Home</a>
+            <a href="/collection" class="text-white hover:text-yellow-300 uppercase font-semibold tracking-wide block">Collection</a>
+            <a href="/services" class="text-white hover:text-yellow-300 uppercase font-semibold tracking-wide block">Services</a>
+        </div>
+    </div>
+</header>
+
+<style>
+    h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    nav a {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #ffc107; /* Change link color on hover */
+    }
+
+    .opacity-50 {
+        opacity: 0.4;
+    }
+</style>
+
+<script>
+    // JavaScript to toggle the visibility of the navigation menu as a dropdown on click of the hamburger icon
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navDropdown = document.getElementById('nav-dropdown');
+
+        if (menuToggle && navMenu && navDropdown) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                navDropdown.classList.toggle('hidden');
+            });
+        } else {
+            console.error("Error: 'menuToggle', 'navMenu', or 'navDropdown' element not found.");
+        }
+    });
+</script>

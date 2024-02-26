@@ -1,0 +1,56 @@
+
+<main class="bg-gradient-to-r from-purple-900 to-blue-900 min-h-screen">
+  <section class="container mx-auto py-16">
+    <h1 class="retro-heading">This is my Collection</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Collection Items Here -->
+      <div class="rounded-lg overflow-hidden shadow-xl bg-indigo-800 p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">NFTS</h2>
+        <p class="text-lg lg:text-xl text-gray-300">Dive into my treasure trove of vintage NFTS.</p>
+        <img src="../images/nft.webp" alt="NFTS" class="mt-6 mx-auto h-48 w-48 object-cover rounded-lg">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-xl bg-indigo-800 p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Pops</h2>
+        <p class="text-lg lg:text-xl text-gray-300">Discover my extensive collection of Funko Pops featuring special signed pops and many other cool things.</p>
+        <img src="../images/pops.jpg" alt="Pops" class="mt-6 mx-auto h-48 w-48 object-cover rounded-lg">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-xl bg-indigo-800 p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Cards</h2>
+        <p class="text-lg lg:text-xl text-gray-300">Check out our collection of trading cards, including Pokémon, One Piece, and more.</p>
+        <img src="../images/pokemoncards.webp" alt="Cards" class="mt-6 mx-auto h-48 w-80 object-cover rounded-lg">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-xl bg-indigo-800 p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Manga</h2>
+        <p class="text-lg lg:text-xl text-gray-300">Immerse yourself in my manga collection, featuring classics and the latest releases.</p>
+        <img src="../images/manga.jpg" alt="Manga" class="mt-6 mx-auto h-48 w-48 object-cover rounded-lg">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-xl bg-indigo-800 p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Comics</h2>
+        <p class="text-lg lg:text-xl text-gray-300">Explore my comic book collection, including superheroes, manga, and graphic novels.</p>
+        <img src="../images/comics.webp" alt="Comics" class="mt-6 mx-auto h-48 w-48 object-cover rounded-lg">
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-xl bg-indigo-800 p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-white">Retro Items</h2>
+        <p class="text-lg lg:text-xl text-gray-300">Discover retro collectibles from your favorite movies, TV shows, and video games.</p>
+        <img src="../images/retro.webp" alt="Retro Items" class="mt-6 mx-auto h-48 w-48 object-cover rounded-lg">
+      </div>
+    </div>
+  </section>
+</main>
+
+<style scoped>
+    @keyframes flicker {
+    0% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+    50% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.4); }
+    100% { text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+  }
+
+  .retro-heading {
+    font-size: 3.5rem; /* Increased font size */
+    font-weight: bold;
+    color: rgba(255, 215, 0, 1); /* Yellow color */
+    animation: flicker 0.5s infinite alternate-reverse;
+    text-align: center; /* Center align the text */
+    margin-bottom: 50px; /* Add some top margin for spacing */
+  }
+  </style>
