@@ -1,3 +1,15 @@
+# Repo for Collections website 
+
+# What my site currently looks like
+- subject to change 
+<br>
+
+![pagebuilt3](https://github.com/ailynux/Collections/assets/95152597/e5b6196a-372e-4f88-893a-cc66d41a1848)
+
+
+
+
+
 # Astro Starter Kit: Basics
 
 ```sh
