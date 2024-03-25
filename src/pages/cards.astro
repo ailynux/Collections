@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Product from '../components/landing/Product.astro';
+import Cardspage from '../components/landing/Cardspage.astro';
+---
+
+
+<Layout title="Collections">
+	<Product />
+	<slot />
+
+	<Cardspage />
+
+</Layout>

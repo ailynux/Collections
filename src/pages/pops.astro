@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Product from '../components/landing/Product.astro';
+import Collection from '../components/landing/Collection.astro';
+import Popspage from '../components/landing/Popspage.astro';
+
+---
+
+<Layout title="Pops">
+	<Product />
+	<slot />
+
+	<Popspage />
+
+</Layout>

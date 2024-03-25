@@ -1,0 +1,142 @@
+<main class="bg-gradient-to-r from-purple-900 to-blue-900 min-h-screen">
+    <section class="container mx-auto py-16">
+      <h1 class="retro-heading">Pop Collection</h1>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Collection Items Here -->
+        <a href="pops_page_url_here" class="pop-item">
+          <div class="pop-item-wrapper">
+            <img src="../images/pops.jpg" alt="Pop 1" class="pop-image">
+            <div class="pop-details">
+              <h2 class="pop-title">Pop Name 1</h2>
+              <p class="pop-description">This is a brief description of Pop Name 1.</p>
+            </div>
+          </div>
+        </a>
+        <a href="pops_page_url_here" class="pop-item">
+          <div class="pop-item-wrapper">
+            <img src="../images/pops.jpg" alt="Pop 2" class="pop-image">
+            <div class="pop-details">
+              <h2 class="pop-title">Pop Name 2</h2>
+              <p class="pop-description">This is a brief description of Pop Name 2.</p>
+            </div>
+          </div>
+        </a>
+        <!-- Add more pop items as needed -->
+        <a href="pops_page_url_here" class="pop-item">
+          <div class="pop-item-wrapper">
+            <img src="../images/pops.jpg" alt="Pop 3" class="pop-image">
+            <div class="pop-details">
+              <h2 class="pop-title">Pop Name 3</h2>
+              <p class="pop-description">This is a brief description of Pop Name 3.</p>
+            </div>
+          </div>
+        </a>
+        <a href="pops_page_url_here" class="pop-item">
+          <div class="pop-item-wrapper">
+            <img src="../images/pops.jpg" alt="Pop 4" class="pop-image">
+            <div class="pop-details">
+              <h2 class="pop-title">Pop Name 4</h2>
+              <p class="pop-description">This is a brief description of Pop Name 4.</p>
+            </div>
+          </div>
+        </a>
+        <a href="pops_page_url_here" class="pop-item">
+          <div class="pop-item-wrapper">
+            <img src="../images/pops.jpg" alt="Pop 4" class="pop-image">
+            <div class="pop-details">
+              <h2 class="pop-title">Pop Name 4</h2>
+              <p class="pop-description">This is a brief description of Pop Name 4.</p>
+            </div>
+          </div>
+        </a>
+        <a href="pops_page_url_here" class="pop-item">
+          <div class="pop-item-wrapper">
+            <img src="../images/pops.jpg" alt="Pop 4" class="pop-image">
+            <div class="pop-details">
+              <h2 class="pop-title">Pop Name 4</h2>
+              <p class="pop-description">This is a brief description of Pop Name 4.</p>
+            </div>
+          </div>
+        </a>
+        <!-- Add more pop items as needed -->
+  
+      </div>
+    </section>
+  </main>
+  
+  <style scoped>
+    /* Styling for pop items */
+    .pop-item {
+      transition: transform 0.3s ease-in-out;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .pop-item:hover {
+      transform: translateY(-10px);
+    }
+  
+    .pop-item-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    .pop-image {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .pop-item:hover .pop-image {
+      transform: scale(1.05);
+    }
+  
+    .pop-details {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+    }
+  
+    .pop-item:hover .pop-details {
+      opacity: 1;
+    }
+  
+    .pop-title {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+  
+    .pop-description {
+      font-size: 1rem;
+      color: #fff;
+    }
+  
+    .retro-heading {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: rgba(255, 215, 0, 1);
+      animation: flicker 0.5s infinite alternate-reverse;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  
+    @keyframes flicker {
+      0% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      }
+      50% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.4);
+      }
+      100% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      }
+    }
+  </style>

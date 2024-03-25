@@ -1,0 +1,97 @@
+<main>
+    <section id="cards" class="bg-gradient-to-b from-red-600 to-blue-600 py-16">
+        <div class="container mx-auto text-center">
+            <header class="flex flex-col justify-center items-center bg-gradient-to-r from-purple-900 to-blue-900 p-10">
+                <h2 class="text-5xl md:text-5xl lg:text-7xl font-extrabold text-white mb-8 flex items-center space-x-2">
+                    <span class="text-yellow-400 text-6xl animate-bounce">&#9733;</span>
+                    <span class="text-white">Collecting</span>
+                    <span class="text-yellow-400 text-6xl animate-bounce">&#9733;</span>
+                    <h1 class="text-5xl md:text-6xl font-extrabold mb-8 relative">
+                        <span class="absolute top-0 left-0 -mt-4 -mr-4 text-yellow-400 text-7xl animate-ping">&#9733;</span>
+                        <span class="relative bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">Cards</span>
+                        <span class="absolute bottom-0 right-0 -mb-4 -ml-4 text-yellow-400 text-7xl animate-ping">&#9733;</span>
+                    </h1>
+                    
+            </header>
+            
+            <div class="bg-gradient-to-b from-blue-900 to-grey-800 py-12">
+                <div class="max-w-3xl mx-auto px-4">
+                  <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">My World of Trading Cards</h2>
+                  <p class="text-lg text-gray-200 leading-7 mb-8">Embark on a journey where imagination meets collectibles. Our curated collection of trading cards features iconic franchises such as Pokémon, Magic: The Gathering, and many more. Immerse yourself in a realm of discovery and wonder.</p>
+                </div>
+              </div>
+              
+
+            <!-- Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card Item -->
+                <div class="card-item bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="../images/pika.jpg" alt="Card 1" class="rounded-t-lg w-full">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Pokémon Card</h3>
+                        <p class="text-lg text-gray-600">Charizard - Rare Holo</p>
+                    </div>
+                </div>
+                <!-- End of Card Item -->
+
+                <!-- Card Item -->
+                <div class="card-item bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="../images/pika.jpg" alt="Card 2" class="rounded-t-lg w-full">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Magic: The Gathering Card</h3>
+                        <p class="text-lg text-gray-600">Black Lotus - Unlimited Edition</p>
+                    </div>
+                </div>
+                <!-- End of Card Item -->
+
+                <!-- Card Item -->
+                <div class="card-item bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <img src="../images/pika.jpg" alt="Card 3" class="rounded-t-lg w-full">
+                    <div class="p-4">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Yu-Gi-Oh! Card</h3>
+                        <p class="text-lg text-gray-600">Blue-Eyes White Dragon - Ultra Rare</p>
+                    </div>
+                </div>
+                <!-- End of Card Item -->
+
+                <!-- Add more card items as needed -->
+            </div>
+            <!-- End of Card Grid -->
+        </div>
+    </section>
+</main>
+
+
+
+
+<style>
+     /* Style for the card items */
+  .card-item {
+    @apply bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg shadow-lg overflow-hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card-item:hover {
+    @apply transform scale-105;
+  }
+
+  .card-item img {
+    @apply w-full h-auto;
+  }
+
+  .card-item h3 {
+    @apply text-xl font-bold text-white mt-4;
+  }
+
+  .card-item p {
+    @apply text-gray-200;
+  }
+
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .card-item {
+      @apply mb-8;
+    }
+  }
+  </style>
+  
